@@ -62,18 +62,8 @@ public class SubDemo {
             System.out.println("Connected");
             System.out.println("Receiving message: ");
 
-
-
         } catch (MqttException me) {
 
-        }
-    }
-
-     class DemoMqttMessageListener implements IMqttMessageListener {
-
-        @Override
-        public void messageArrived(String topic, MqttMessage message) throws Exception {
-            System.err.println("1=" + message.toString());
         }
     }
 }

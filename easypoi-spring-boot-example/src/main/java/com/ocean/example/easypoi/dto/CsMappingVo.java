@@ -2,7 +2,7 @@ package com.ocean.example.easypoi.dto;
 
 
 /**
- * @author jianghaiyang
+ * @author  kevin.jiang
  * @create 2019-01-23
  **/
 public class CsMappingVo  {
