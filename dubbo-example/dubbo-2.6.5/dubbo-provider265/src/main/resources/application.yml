@@ -1,0 +1,24 @@
+server:
+  port: 8081
+
+service:
+  version:
+    ProviderService: 1.0.0
+
+spring:
+  application:
+    name: dubbo-provider-service
+
+dubbo:
+  application:
+    name: ${spring.application.name}
+  protocol:
+    name: dubbo
+    port: -1   #随机端口
+  registry:
+    address: zookeeper://127.0.0.1:2181
+  provider:
+#    group: provider-service-group
+    timeout: 2000
+  metadata-report:
+    address: zookeeper://127.0.0.1:2181

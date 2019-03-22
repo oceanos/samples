@@ -1,0 +1,2 @@
+- root pom 只约定 spring-boot-starter-parent 版本
+- 每个 demo 的 pom 管理自己的依赖

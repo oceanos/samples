@@ -1,0 +1,22 @@
+
+service:
+  version:
+    ProviderService: 1.0.0
+
+spring:
+  application:
+    name: dubbo-consumer-service
+
+dubbo:
+  application:
+    name: ${spring.application.name}
+  registry:
+    address: zookeeper://127.0.0.1:2181
+  consumer:
+    retries: 1
+    timeout: 2000
+    check: false
+#    group:
+
+server:
+  port: 8082
