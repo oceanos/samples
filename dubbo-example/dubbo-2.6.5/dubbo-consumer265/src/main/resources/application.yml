@@ -1,7 +1,9 @@
+server:
+  port: 8082
 
 service:
   version:
-    ProviderService: 1.0.0
+    ProviderService: 1.0.1
 
 spring:
   application:
@@ -16,7 +18,3 @@ dubbo:
     retries: 1
     timeout: 2000
     check: false
-#    group:
-
-server:
-  port: 8082

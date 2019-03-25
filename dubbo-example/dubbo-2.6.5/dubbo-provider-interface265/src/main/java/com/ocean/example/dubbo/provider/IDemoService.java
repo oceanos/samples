@@ -12,8 +12,9 @@ public interface IDemoService {
      * 计算
      *
      * @param expression
+     * @param flag
      *
      * @return
      */
-    String calc(String expression);
+    String calc(String expression, boolean flag);
 }

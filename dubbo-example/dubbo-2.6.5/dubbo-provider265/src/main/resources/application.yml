@@ -1,9 +1,9 @@
 server:
-  port: 8081
+  port: 8083
 
 service:
   version:
-    ProviderService: 1.0.0
+    ProviderService: 1.0.1
 
 spring:
   application:
@@ -18,7 +18,4 @@ dubbo:
   registry:
     address: zookeeper://127.0.0.1:2181
   provider:
-#    group: provider-service-group
     timeout: 2000
-  metadata-report:
-    address: zookeeper://127.0.0.1:2181

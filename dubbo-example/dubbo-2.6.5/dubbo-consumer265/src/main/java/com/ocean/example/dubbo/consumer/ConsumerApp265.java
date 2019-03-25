@@ -26,6 +26,6 @@ public class ConsumerApp265 {
 
     @GetMapping("calc")
     public String test(String exp) {
-        return demoService.calc(exp);
+        return demoService.calc(exp,false);
     }
 }

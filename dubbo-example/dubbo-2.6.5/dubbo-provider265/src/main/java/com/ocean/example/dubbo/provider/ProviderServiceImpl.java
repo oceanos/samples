@@ -13,7 +13,7 @@ import com.alibaba.dubbo.config.annotation.Service;
 public class ProviderServiceImpl implements IDemoService {
 
     @Override
-    public String calc(String expression) {
+    public String calc(String expression, boolean flag) {
         return "123";
     }
 }
